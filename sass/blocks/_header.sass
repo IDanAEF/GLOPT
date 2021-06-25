@@ -1,0 +1,46 @@
+.header 
+	margin-bottom: 9px
+	&__col 
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__phone
+		margin-left: 20px
+		text-align: right
+		&-subtext
+			font-size: 14px
+			line-height: 24px
+			font-weight: 300
+			color: #ffffff
+			margin-bottom: 1px
+		&-number
+			font-size: 19px
+			line-height: 24px
+			font-weight: 700
+			color: #ffffff
+			text-decoration: none
+	&__nav
+		width: 600px
+		ul 
+			display: flex
+			justify-content: space-between
+			list-style-type: none
+			li 
+				position: relative
+			li.br:after 
+				content: ''
+				position: absolute
+				height: 23px
+				border-right: 2px dotted #000000
+				top: 50%
+				transform: translateY(-50%)
+				right: -15px
+			a 
+				font-size: 15px
+				line-height: 16px
+				font-weight: 400
+				color: #ffffff
+				text-decoration: none 
+			a:hover 
+				border-bottom: 1px solid $main-color
+				color: $main-color
