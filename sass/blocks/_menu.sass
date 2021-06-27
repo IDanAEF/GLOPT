@@ -1,0 +1,51 @@
+.menu 
+	left: -100%
+	top: 20px
+	position: fixed
+	background-color: $main-color
+	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.7)
+	width: 50%
+	height: 50%
+	padding: 55px 25px 25px 25px
+	transition: 0.5s all
+	&.active
+		left: 20px
+	&__close
+		position: absolute
+		width: 50px
+		height: 20px
+		top: 20px
+		right: -10px
+		cursor: pointer
+		span 
+			display: block
+			width: 30px
+			height: 5px
+			background-color: #ffffff
+			&:nth-child(1)
+				transform: rotate(45deg)
+				position: absolute
+				top: -1px
+			&:nth-child(2)
+				transform: rotate(-45deg)
+	ul 
+
+		list-style-type: none 
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+		li
+			background-color: rgba(255, 255, 255, 0.08)
+			border-bottom: 1px solid black
+			border-top: 1px solid black
+			height: 35px
+			&:not(:last-child)
+				margin-bottom: 20px 
+			a 
+				display: block
+				text-decoration: none
+				color: #ffffff
+				font-size: 20px
+				line-height: 35px
+				text-transform: uppercase

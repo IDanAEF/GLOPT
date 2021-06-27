@@ -6,3 +6,11 @@ $(document).ready(function(){
     arrows: true
   });
 });
+
+$('.hamburger').on('click', function() {
+  $('.menu').addClass('active');
+});
+
+$('.menu__close').on('click', function() {
+  $('.menu').removeClass('active');
+});
