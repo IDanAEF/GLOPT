@@ -329,12 +329,12 @@
 				margin-right: 0px
 				a 
 					display: none
-	.hamburger
-		display: none
 @media (max-width: 767px)
 	.object
 		font-size: 15px
 	.header
+		.hamburger
+			display: flex
 		&__nav
 			display: none
 		&__col
@@ -347,6 +347,7 @@
 				line-height: 20px
 				font-size: 13px
 	.promo 
+		height: 750px
 		&__service
 			margin-top: 25px
 		&__title
@@ -381,6 +382,27 @@
 		&__undertitle
 			font-size: 14px
 			line-height: 21px
+	.delivery
+		&__item
+			min-height: 300px
+			&-undertext
+				margin: 5px 0px 12px 0px
+	.consultation
+		&__title
+			font-size: 20px
+		&__form
+			input 
+				width: 156px
+				margin-right: 0px
+				font-size: 11px
+				padding: 13px
+	.scheme 
+		min-height: 600px
+		&__items
+			margin-top: 0px
+		&__row
+			.scheme__item
+				margin-top: 15px
 	.review
 		padding-top: 20px
 		min-height: 370px
@@ -394,5 +416,202 @@
 		.slick-prev
 			left: 155px
 	.message
+		min-height: 340px
+		&__title
+			font-size: 14px
+		&__undertitle
+			font-size: 11px
 		&__form
-			width: 500px
+			width: 100%
+			height: 270px
+			input 
+				width: 149px
+				padding: 0px 13px
+				height: 45px
+			input, textarea
+				font-size: 11px
+			&-head
+				height: 51px
+			&-body
+				height: 217px
+	.map
+		min-height: 405px
+		&__info
+			height: 145px
+			width: 290px
+		iframe
+			height: 405px
+	.footer 
+		min-height: 160px
+		padding-top: 18px
+		&__head
+			&-title
+				display: none
+			&-tel
+				position: unset
+				margin-right: 20px
+				font-size: 13px
+				line-height: 23px
+				a 
+					display: inline
+					font-size: 17px
+					line-height: 17px
+		&__line
+			margin: 10px 0px 8px 0px
+@media (max-width: 575px)
+	.menu 
+		width: 70%
+		height: 60%
+		ul 
+			li
+				&:not(:last-child)
+					margin-bottom: 0
+				a 
+					font-size: 16px
+	.button
+		font-size: 10px
+		width: 120px
+		height: 34px
+	.object
+		font-size: 14px
+		line-height: 18px
+	.title 
+		font-size: 17px
+	.hrs 
+		margin: 8px auto 6px auto
+	.header 
+		margin-bottom: 15px
+		&__phone
+			display: none
+	.promo 
+		height: 650px
+		padding-top: $pt_575
+		&__subtitle
+			display: none
+		&__title
+			font-size: 23px
+		&__undertitle
+			font-size: 18px
+		&__line
+			margin: 22px auto 0px auto
+		&__service
+			margin-top: 7px
+		&__button
+			width: 155px
+			font-size: 12px
+			height: 42px
+			margin-top: 25px
+		&__item 
+			display: flex
+			text-align: left
+			&-img
+				margin: 0px 20px 0px 0px
+				img 
+					width: 50px
+			&-sub
+				font-size: 14px
+				line-height: 20px
+	.advantages
+		padding-top: $pt_575
+		padding-bottom: 20px
+		&__title
+			margin-bottom: 0
+		&__item 
+			margin-bottom: 0px
+			margin-top: 15px
+			&-title
+				font-size: 13px
+				line-height: 23px
+	.job 
+		padding-top: $pt_575
+	.consultation
+		&__title
+			font-size: 15px
+			margin-bottom: 54px
+		&__form 
+			height: 280px
+			padding: 50px 0px 35px 0px
+			flex-direction: column
+			justify-content: space-around
+			input
+				width: 235px
+				font-size: 12px
+				padding: 0px 15px
+	.agent, .company 
+		min-height: 235px
+		padding-top: 22px
+		&__title
+			font-size: 16px
+			margin-bottom: 1px
+			margin-top: 11px
+		&__undertitle
+			font-size: 14px
+			line-height: 19px
+	.delivery
+		padding-top: $pt_575
+		&__items
+			margin-top: 16px
+		&__item 
+			min-height: 285px
+			&-head
+				height: 40px
+	.scheme
+		padding-top: $pt_575
+		padding-bottom: 20px
+	.review
+		padding-top: $pt_575
+		min-height: 430px
+		padding-bottom: 20px
+		.slick
+			&-slide
+				width: 266px
+			&-prev 
+				left: 40px
+				bottom: 235px
+			&-next 
+				right: 40px
+				bottom: 235px
+		&__slider
+			width: 300px
+	.message
+		padding-top: 25px
+		padding-bottom: 25px
+		&__form
+			height: 350px
+			&-body
+				height: 295px
+				padding: 10px 20px 10px 20px
+			input 
+				width: 100%
+				padding: 0px 20px
+				height: 42px
+			input, textarea
+				font-size: 12px
+				margin-top: 5px
+		&__title
+			font-size: 13px
+		&__undertitle
+			font-size: 10px
+	.footer 
+		min-height: 136px
+		padding-top: 17px
+		&__head 
+			&-intro
+				img
+					width: 52px
+					height: 53px
+			&-tel
+				position: absolute
+				left: 20px
+				line-height: 28px
+				margin-right: 0
+				font-size: 13px
+				a 	
+					display: none
+		&__under
+			&-ownership
+				font-size: 11px
+			&-privacy
+				font-size: 11px
+			&-sub
+				display: none
