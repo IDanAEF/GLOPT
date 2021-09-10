@@ -2,16 +2,37 @@
 	min-height: 470px
 	padding-top: 51px
 	padding-bottom: 20px
-	&__img
-		display: flex
-		justify-content: center
+	overflow: hidden
 	&__slider
-		margin: 0 auto
-		margin-top: 31px
-		width: 605px
-		overflow: visible
+		width: 600px
+		margin: 31px auto 0px
+		position: relative
+	&__next, &__prev
+		position: absolute
+		top: 34px
+		cursor: pointer
+		z-index: 3
+	&__next
+		right: 188px
+	&__prev
+		left: 188px
+	&__line
+		display: flex
+		transition: 0.4s all
+	&__underhr
+		font-size: 21px
+		line-height: 24px
+		font-weight: 300
+		color: #2e2e2e
+		text-align: center
 	&__item	
 		text-align: center
+		opacity: 0.3
+		transform: scale(0.65)
+		transition: 0.4s all
+		&.active
+			opacity: 1
+			transform: scale(1)
 	&__undertitle
 		text-align: justify
 		font-size: 14.1px
@@ -23,19 +44,3 @@
 		line-height: 22px
 		font-weight: 700
 		color: #3a3a3a
-	.slick 
-		&-slide
-			margin: 0px 20px
-		&-prev, &-next
-			border: none
-			background-color: unset
-			position: absolute
-			img 
-				cursor: pointer
-		&-prev
-			bottom: 160px
-			left: 185px
-			z-index: 2
-		&-next
-			bottom: 160px
-			right: 185px

@@ -1,3 +1,6 @@
+@media (min-width: 1400px)
+	.container
+		max-width: 1140px
 @media (max-width: 1199px)
 	.hrs 
 		width: 135px
@@ -157,11 +160,24 @@
 	.review
 		min-height: 430px
 		padding-top: $pt_1199
+		&__underhr
+			font-size: 18px
+			line-height: 20px
+		&__slider
+			width: 500px
+			margin: 26px auto 0px
 		&__undertitle
 			font-size: 13.1px
 			line-height: 21px
 		&__title
 			font-size: 17px
+		&__next
+			right: 155px
+		&__prev
+			left: 155px
+		&__next, &__prev
+			img 
+				width: 12px
 	.message
 		min-height: 415px
 		padding-top: 45px
@@ -305,6 +321,15 @@
 	.review
 		padding-top: $pt_991
 		min-height: 390px
+		&__underhr
+			font-size: 16px
+			line-height: 18px
+		&__slider
+			width: 400px
+		&__prev
+			left: 111px
+		&__next
+			right: 111px
 	.message 
 		padding-top: 35px
 		min-height: 380px
@@ -406,15 +431,6 @@
 	.review
 		padding-top: 20px
 		min-height: 370px
-		.slick-slide
-			margin: 0 15px
-			width: 500px
-		&__slider
-			width: 510px
-		.slick-next
-			right: 155px
-		.slick-prev
-			left: 155px
 	.message
 		min-height: 340px
 		&__title
@@ -562,17 +578,12 @@
 		padding-top: $pt_575
 		min-height: 430px
 		padding-bottom: 20px
-		.slick
-			&-slide
-				width: 266px
-			&-prev 
-				left: 40px
-				bottom: 235px
-			&-next 
-				right: 40px
-				bottom: 235px
 		&__slider
-			width: 300px
+			width: 100%
+		&__prev
+			left: 60px
+		&__next
+			right: 60px
 	.message
 		padding-top: 25px
 		padding-bottom: 25px
